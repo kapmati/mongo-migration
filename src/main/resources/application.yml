@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/kapmati-mongo-migration
+mongock:
+  startSystemVersion: 0
+  migration-scan-package: com.kapmati.mongomigration.migration
+  legacy-migration:
+    origin: dbchangelog
+  runner-type: initializingbean
+  enabled: true
